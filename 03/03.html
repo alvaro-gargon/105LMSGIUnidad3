@@ -14,10 +14,12 @@
         <a href="/">Enlace</a>
     </div>
     <script>
-        var nodosHijos=body.childNodes;
-        console.log(nodosHijos);
-        console.log(Array.children);
-        
+        var cuerpo=document.querySelector('body');
+        console.log(cuerpo.childNodes.length);
+        console.log(cuerpo.childElementCount);
+        console.log(cuerpo.parentNode);
+        var app=document.getElementById('app');
+        console.log(app.childNodes);
     </script>
 </body>
 </html>
