@@ -34,11 +34,11 @@ document.getElementById("agregarPosicion").addEventListener("click", function(){
 //eliminar el primer párrafo
 document.getElementById("eliminar").addEventListener("click", function(){
     //eliminar el primer párrafo
-    let parrafo=document.querySelector("p")[0];
-    parrafo.remove();
+    contenedor.removeChild(contenedor.children[0]);
 });
 document.getElementById("eliminarTodos").addEventListener("click", function(){
     //eliminar todos los párrafos
-    let parrafo=document.querySelectorAll("p");
-    parrafo.remove()
+    for (var i = 0; i < contenedor.childElementCount; i++) {
+    contenedor.removeChild(contenedor.children[i]);
+    }
 });
