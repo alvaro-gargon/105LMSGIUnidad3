@@ -18,7 +18,7 @@ document.getElementById("agregarPpio").addEventListener("click", function(){
     //añadir el párrafo al contenedor .prepend(parrafo)
     contenedor.prepend(parrafo);
     //agregar estilos al párrafo texto azul
-   parrafo.style.color="blue"
+    parrafo.style.color="blue"
 });
 //agregar párrafo en una posición concreta
 document.getElementById("agregarPosicion").addEventListener("click", function(){
@@ -27,18 +27,18 @@ document.getElementById("agregarPosicion").addEventListener("click", function(){
     //añadir texto al párrafo
     parrafo.innerText=document.getElementById("texto").value;
     //añadir el párrafo al contenedor inserBefore
-    
+    contenedor.insertBefore(parrafo);
     //agregar estilos color del texto verde
-    
+    parrafo.style.color="green"
 });
 //eliminar el primer párrafo
 document.getElementById("eliminar").addEventListener("click", function(){
     //eliminar el primer párrafo
     let parrafo=document.querySelector("p")[0];
-    contenedor.remove("parrafo");
+    parrafo.remove();
 });
 document.getElementById("eliminarTodos").addEventListener("click", function(){
     //eliminar todos los párrafos
     let parrafo=document.querySelectorAll("p");
-    contenedor.remove("parrafo")
+    parrafo.remove()
 });
