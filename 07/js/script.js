@@ -38,7 +38,8 @@ document.getElementById("eliminar").addEventListener("click", function(){
 });
 document.getElementById("eliminarTodos").addEventListener("click", function(){
     //eliminar todos los párrafos
-    for (var i = 0; i < contenedor.childElementCount; i++) {
+    var con=contenedor.childElementCount;
+    for (var i = 0; i < con; i++) {
     contenedor.removeChild(contenedor.children[i]);
     }
 });
